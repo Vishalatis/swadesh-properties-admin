@@ -1,0 +1,2016 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+
+    <title>Admin | swadesh-properties</title>
+
+    <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png" />
+
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+
+    <link rel="stylesheet" href="assets/css/fontawesome-iconpicker.min.css" />
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="assets/css/bootstrap-tagsinput.css" />
+
+    <link rel="stylesheet" href="assets/css/jquery-ui.min.css" />
+
+    <link rel="stylesheet" href="assets/css/jquery.timepicker.min.css" />
+
+    <link rel="stylesheet" href="assets/css/bootstrap-datepicker.min.css" />
+
+    <link rel="stylesheet" href="assets/css/dropzone.min.css" />
+
+    <link rel="stylesheet" href="assets/css/atlantis.css" />
+
+    <link rel="stylesheet" href="assets/css/select2.min.css" />
+
+    <link rel="stylesheet" href="assets/css/admin-main.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body data-background-color="dark">
+    <div class="request-loader">
+      <img src="assets/img/loader.gif" alt="loader" />
+    </div>
+
+    <div class="wrapper">
+      <div class="main-header">
+        <!-- Logo Header Start -->
+        <div class="logo-header" data-background-color="dark2">
+          <a href="dashboard.html" class="logo" target="_blank">
+            <img
+              src="assets/img/logo.png"
+              alt="logo"
+              class="navbar-brand"
+              width="120"
+            />
+          </a>
+
+          <button
+            class="navbar-toggler sidenav-toggler ml-auto"
+            type="button"
+            data-toggle="collapse"
+            data-target="collapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon">
+              <i class="fa-solid fa-bars"></i>
+            </span>
+          </button>
+          <button class="topbar-toggler more">
+            <i class="icon-options-vertical"></i>
+          </button>
+
+          <div class="nav-toggle">
+            <button class="btn btn-toggle toggle-sidebar">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+        </div>
+        <!-- Logo Header End -->
+
+        <!-- Navbar Header Start -->
+        <nav
+          class="navbar navbar-header navbar-expand-lg"
+          data-background-color="dark"
+        >
+          <div class="container-fluid">
+            <ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
+              <li class="nav-item dropdown hidden-caret">
+                <a
+                  class="dropdown-toggle profile-pic"
+                  data-toggle="dropdown"
+                  href="#"
+                  aria-expanded="false"
+                >
+                  <div class="avatar-sm">
+                    <img
+                      src="assets/img/admins/66693d3c45263.png"
+                      alt="Admin Image"
+                      class="avatar-img rounded-circle"
+                    />
+                  </div>
+                </a>
+
+                <ul class="dropdown-menu dropdown-user animated fadeIn">
+                  <div class="dropdown-user-scroll scrollbar-outer">
+                    <li>
+                      <div class="user-box">
+                        <div class="avatar-lg">
+                          <img
+                            src="assets/img/admins/66693d3c45263.png"
+                            alt="Admin Image"
+                            class="avatar-img rounded-circle"
+                          />
+                        </div>
+
+                        <div class="u-text">
+                          <h4>Leonard Bourne</h4>
+                          <p class="text-muted">example@gmail.com</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="edit-profile.html">
+                        Edit Profile
+                      </a>
+
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="change-password.html">
+                        Change Password
+                      </a>
+
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="index.html"> Logout </a>
+                    </li>
+                  </div>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- Navbar Header End -->
+      </div>
+
+      <div class="sidebar sidebar-style-2" data-background-color="dark2">
+        <div class="sidebar-wrapper scrollbar scrollbar-inner">
+          <div class="sidebar-content">
+            <div class="user">
+              <div class="avatar-sm float-left mr-2">
+                <img
+                  src="assets/img/admins/66693d3c45263.png"
+                  alt="Admin Image"
+                  class="avatar-img rounded-circle"
+                />
+              </div>
+
+              <div class="info">
+                <a
+                  data-toggle="collapse"
+                  href="#adminProfileMenu"
+                  aria-expanded="true"
+                >
+                  <span>
+                    Leonard
+
+                    <span class="user-level">Super Admin</span>
+
+                    <span class="caret"></span>
+                  </span>
+                </a>
+
+                <div class="clearfix"></div>
+
+                <div class="collapse in" id="adminProfileMenu">
+                  <ul class="nav">
+                    <li>
+                      <a href="edit-profile.html">
+                        <span class="link-collapse">Edit Profile</span>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="change-password.html">
+                        <span class="link-collapse">Change Password</span>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="index.html">
+                        <span class="link-collapse">Logout</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <ul class="nav nav-primary">
+              <div class="row mb-3">
+                <div class="col-12">
+                  <form action="">
+                    <div class="form-group py-0">
+                      <input
+                        name="term"
+                        type="text"
+                        class="form-control sidebar-search ltr"
+                        placeholder="Search Menu Here..."
+                      />
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+              <li class="nav-item">
+                <a href="dashboard.html">
+                  <i class="fa-solid fa-dashboard"></i>
+                  <p>Dashboard</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a data-toggle="collapse" href="#propertySpecification">
+                  <i class="fa-regular fa-file"></i>
+                  <p>Property Specifications</p>
+                  <span class="caret"></span>
+                </a>
+
+                <div id="propertySpecification" class="collapse">
+                  <ul class="nav nav-collapse">
+                    <li class="">
+                      <a href="property-specification-settings.html">
+                        <span class="sub-item">Settings</span>
+                      </a>
+                    </li>
+                    <li class="acive">
+                      <a href="property-specification-categories.html">
+                        <span class="sub-item">Categories</span>
+                      </a>
+                    </li>
+
+                    <li class="">
+                      <a href="property-specification-amenity.html">
+                        <span class="sub-item">Amenities</span>
+                      </a>
+                    </li>
+                    <li class="">
+                      <a href="property-specification-country.html">
+                        <span class="sub-item">Countries</span>
+                      </a>
+                    </li>
+                    <li class="">
+                      <a href="property-specification-states.html">
+                        <span class="sub-item">States</span>
+                      </a>
+                    </li>
+                    <li class="">
+                      <a href="property-specification-cities.html">
+                        <span class="sub-item">Cities</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a data-toggle="collapse" href="#carManagement">
+                  <i class="fa-solid fa-home"></i>
+                  <p>Property Management</p>
+                  <span class="caret"></span>
+                </a>
+
+                <div id="carManagement" class="collapse">
+                  <ul class="nav nav-collapse">
+                    <li class="">
+                      <a href="property-management-settings.html">
+                        <span class="sub-item">Settings</span>
+                      </a>
+                    </li>
+                    <li class="">
+                      <a href="property-management-type.html">
+                        <span class="sub-item">Add Property</span>
+                      </a>
+                    </li>
+
+                    <li class="">
+                      <a href="property-management-properties.html">
+                        <span class="sub-item">Manage Properties</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a data-toggle="collapse" href="#featuredPricing">
+                  <i class="fa-solid fa-money-bill"></i>
+                  <p>Featured Properties</p>
+
+                  <span class="caret"></span>
+                </a>
+
+                <div id="featuredPricing" class="collapse">
+                  <ul class="nav nav-collapse">
+                    <li class="">
+                      <a href="featured-pricing.html">
+                        <span class="sub-item">Pricing</span>
+                      </a>
+                    </li>
+
+                    <li class="">
+                      <a href="featured-request.html">
+                        <span class="sub-item">All Request</span>
+                      </a>
+                    </li>
+                    <li class="">
+                      <a href="featured-request-pending.html">
+                        <span class="sub-item">Pending Request</span>
+                      </a>
+                    </li>
+
+                    <li class="">
+                      <a href="featured-request-accepted.html">
+                        <span class="sub-item">Accepted Request</span>
+                      </a>
+                    </li>
+                    <li class="">
+                      <a href="featured-request-rejected.html">
+                        <span class="sub-item">Rejected Request</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a href="property-messages.html">
+                  <i class="fa-solid fa-comment"></i>
+                  <p>Property Messages</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a data-toggle="collapse" href="#projectManagement">
+                  <i class="fa-solid fa-building"></i>
+                  <p>Project Management</p>
+                  <span class="caret"></span>
+                </a>
+
+                <div id="projectManagement" class="collapse">
+                  <ul class="nav nav-collapse">
+                    <li class="">
+                      <a href="project-management-settings.html">
+                        <span class="sub-item">Settings</span>
+                      </a>
+                    </li>
+
+                    <li class="">
+                      <a href="project-management-create.html">
+                        <span class="sub-item">Add Project</span>
+                      </a>
+                    </li>
+
+                    <li class="">
+                      <a href="project-management-projects.html">
+                        <span class="sub-item">Manage Projects</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a href="agent-management.html">
+                  <i class="fa-solid fa-users"></i>
+                  <p>Agents</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a data-toggle="collapse" href="#packageManagement">
+                  <i class="fa-solid fa-receipt"></i>
+                  <p>Package Management</p>
+                  <span class="caret"></span>
+                </a>
+
+                <div id="packageManagement" class="collapse">
+                  <ul class="nav nav-collapse">
+                    <li class="">
+                      <a href="package-settings.html">
+                        <span class="sub-item">Settings</span>
+                      </a>
+                    </li>
+
+                    <li class="">
+                      <a href="package-packages.html">
+                        <span class="sub-item">Packages</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a href="menu-builder.html">
+                  <i class="fa-solid fa-bars"></i>
+                  <p>Menu Builder</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="payment-log.html">
+                  <i class="fa-solid fa-rupee-sign"></i>
+                  <p>Payment Log</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a data-toggle="collapse" href="#user">
+                  <i class="fa-solid fa-users"></i>
+                  <p>Users Management</p>
+                  <span class="caret"></span>
+                </a>
+
+                <div id="user" class="collapse">
+                  <ul class="nav nav-collapse">
+                    <li class="">
+                      <a href="user-management.html">
+                        <span class="sub-item">Registered Users</span>
+                      </a>
+                    </li>
+
+                    <li class="">
+                      <a href="user-management-create.html">
+                        <span class="sub-item">Add User</span>
+                      </a>
+                    </li>
+
+                    <li class="">
+                      <a href="user-management-subscribers.html">
+                        <span class="sub-item">Subscribers</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a data-toggle="collapse" href="#vendor">
+                  <i class="fa-solid fa-users"></i>
+                  <p>Vendors Management</p>
+                  <span class="caret"></span>
+                </a>
+
+                <div id="vendor" class="collapse">
+                  <ul class="nav nav-collapse">
+                    <li class="">
+                      <a href="vendor-management-settings.html">
+                        <span class="sub-item">Settings</span>
+                      </a>
+                    </li>
+                    <li class="">
+                      <a href="vendor-management-registered-vendors.html">
+                        <span class="sub-item">Registered vendors</span>
+                      </a>
+                    </li>
+                    <li class="">
+                      <a href="vendor-management-add-vendor.html">
+                        <span class="sub-item">Add vendor</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a data-toggle="collapse" href="#support_ticket">
+                  <i class="fa-solid fa-circle-info"></i>
+                  <p>Support Tickets</p>
+                  <span class="caret"></span>
+                </a>
+
+                <div id="support_ticket" class="collapse">
+                  <ul class="nav nav-collapse">
+                    <li class="">
+                      <a href="support-ticket-setting.html">
+                        <span class="sub-item">Setting</span>
+                      </a>
+                    </li>
+                    <li class="">
+                      <a href="support-tickets.html">
+                        <span class="sub-item">All Tickets</span>
+                      </a>
+                    </li>
+                    <li class="">
+                      <a href="support-ticket-pending.html">
+                        <span class="sub-item">Pending Tickets</span>
+                      </a>
+                    </li>
+                    <li class="">
+                      <a href="support-ticket-open.html">
+                        <span class="sub-item">Open Tickets</span>
+                      </a>
+                    </li>
+                    <li class="">
+                      <a href="support-ticket-closed.html">
+                        <span class="sub-item">Closed Tickets</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a data-toggle="collapse" href="#home_page">
+                  <i class="fa-solid fa-layer-group"></i>
+                  <p>Home Page</p>
+                  <span class="caret"></span>
+                </a>
+
+                <div id="home_page" class="collapse">
+                  <ul class="nav nav-collapse">
+                    <li class="submenu">
+                      <a data-toggle="collapse" href="#hero_section">
+                        <span class="sub-item">Hero Section</span>
+                        <span class="caret"></span>
+                      </a>
+
+                      <div id="hero_section" class="collapse">
+                        <ul class="nav nav-collapse subnav">
+                          <li class="">
+                            <a href="home-page-hero-section.html">
+                              <span class="sub-item">Static Version</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+
+                    <li class="">
+                      <a href="about-section.html">
+                        <span class="sub-item">About Section</span>
+                      </a>
+                    </li>
+
+                    <li class="">
+                      <a href="why-choose-us-section.html">
+                        <span class="sub-item">Why Choose Us Section</span>
+                      </a>
+                    </li>
+
+                    <li class="">
+                      <a href="brand-section.html">
+                        <span class="sub-item">Brand Section</span>
+                      </a>
+                    </li>
+
+                    <li class="">
+                      <a href="property-section.html">
+                        <span class="sub-item">Property Section</span>
+                      </a>
+                    </li>
+
+                    <li class="">
+                      <a href="feature-section.html">
+                        <span class="sub-item">Featured Property Section</span>
+                      </a>
+                    </li>
+
+                    <li class="">
+                      <a href="counter-section.html">
+                        <span class="sub-item">Counter Section</span>
+                      </a>
+                    </li>
+
+                    <li class="">
+                      <a href="city-section.html">
+                        <span class="sub-item">City Section</span>
+                      </a>
+                    </li>
+
+                    <li class="">
+                      <a href="testimonial-section.html">
+                        <span class="sub-item">Testimonial Section</span>
+                      </a>
+                    </li>
+
+                    <li class="">
+                      <a href="vendor-section.html">
+                        <span class="sub-item">Vendor Section</span>
+                      </a>
+                    </li>
+
+                    <li class="">
+                      <a href="subscribe-section.html">
+                        <span class="sub-item">Subscribe Section</span>
+                      </a>
+                    </li>
+
+                    <li class="">
+                      <a href="section-customization.html">
+                        <span class="sub-item">Section Show/Hide</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a data-toggle="collapse" href="#footer">
+                  <i class="fa-solid fa-shoe-prints"></i>
+                  <p>Footer</p>
+                  <span class="caret"></span>
+                </a>
+
+                <div id="footer" class="collapse">
+                  <ul class="nav nav-collapse">
+                    <li class="">
+                      <a href="logo-and-image.html">
+                        <span class="sub-item">Logo &amp; Image</span>
+                      </a>
+                    </li>
+
+                    <li class="">
+                      <a href="content.html">
+                        <span class="sub-item">Content</span>
+                      </a>
+                    </li>
+
+                    <li class="">
+                      <a href="quick-links.html">
+                        <span class="sub-item">Quick Links</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a href="custom-pages.html">
+                  <i class="fa-solid fa-file"></i>
+                  <p>Custom Pages</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a data-toggle="collapse" href="#blog">
+                  <i class="fa-solid fa-blog"></i>
+                  <p>Blog Management</p>
+                  <span class="caret"></span>
+                </a>
+
+                <div id="blog" class="collapse">
+                  <ul class="nav nav-collapse">
+                    <li class="">
+                      <a href="blog-management-categories.html">
+                        <span class="sub-item">Categories</span>
+                      </a>
+                    </li>
+
+                    <li class="">
+                      <a href="blog-management-blogs.html">
+                        <span class="sub-item">Posts</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a href="faq-management.html">
+                  <i class="fa-solid fa-circle-notch"></i>
+                  <p>FAQ Management</p>
+                </a>
+              </li>
+
+              <li class="nav-item active">
+                <a data-toggle="collapse" href="#customid">
+                  <i class="fa-brands fa-buysellads"></i>
+                  <p>Advertisements</p>
+                  <span class="caret"></span>
+                </a>
+
+                <div id="customid" class="collapse">
+                  <ul class="nav nav-collapse">
+                    <li class="">
+                      <a href="advertise-settings.html">
+                        <span class="sub-item">Settings</span>
+                      </a>
+                    </li>
+
+                    <li class="active">
+                      <a href="advertise-all-advertisement.html">
+                        <span class="sub-item">All Advertisements</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a href="announcement-popups.html">
+                  <i class="fa-solid fa-bullhorn"></i>
+                  <p>Announcement Popups</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a data-toggle="collapse" href="#basic_settings">
+                  <i class="fa-solid fa-gears"></i>
+                  <p>Basic Settings</p>
+                  <span class="caret"></span>
+                </a>
+
+                <div id="basic_settings" class="collapse">
+                  <ul class="nav nav-collapse">
+                    <li class="">
+                      <a href="general-settings.html">
+                        <span class="sub-item">General Settings</span>
+                      </a>
+                    </li>
+
+                    <li class="">
+                      <a href="contact-page.html">
+                        <span class="sub-item">Contact Page</span>
+                      </a>
+                    </li>
+
+                    <li class="submenu">
+                      <a data-toggle="collapse" href="#mail-settings">
+                        <span class="sub-item">Email Settings</span>
+                        <span class="caret"></span>
+                      </a>
+
+                      <div id="mail-settings" class="collapse">
+                        <ul class="nav nav-collapse subnav">
+                          <li class="">
+                            <a href="mail-from-admin.html">
+                              <span class="sub-item">Mail From Admin</span>
+                            </a>
+                          </li>
+
+                          <li class="">
+                            <a href="mail-to-admin.html">
+                              <span class="sub-item">Mail To Admin</span>
+                            </a>
+                          </li>
+
+                          <li class="">
+                            <a href="mail-templates.html">
+                              <span class="sub-item">Mail Templates</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+
+                    <li class="">
+                      <a href="breadcrumb.html">
+                        <span class="sub-item">Breadcrumb</span>
+                      </a>
+                    </li>
+
+                    <li class="">
+                      <a href="page-headings.html">
+                        <span class="sub-item">Page Headings</span>
+                      </a>
+                    </li>
+
+                    <li class="">
+                      <a href="plugins.html">
+                        <span class="sub-item">Plugins</span>
+                      </a>
+                    </li>
+
+                    <li class="">
+                      <a href="seo-informations.html">
+                        <span class="sub-item">SEO Informations</span>
+                      </a>
+                    </li>
+
+                    <li class="">
+                      <a href="maintenance-mode.html">
+                        <span class="sub-item">Maintenance Mode</span>
+                      </a>
+                    </li>
+
+                    <li class="">
+                      <a href="cookie-alert.html">
+                        <span class="sub-item">Cookie Alert</span>
+                      </a>
+                    </li>
+
+                    <li class="">
+                      <a href="social-medias.html">
+                        <span class="sub-item">Social Medias</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a data-toggle="collapse" href="#payment_gateways">
+                  <i class="fa-brands fa-paypal"></i>
+                  <p>Payment Gateways</p>
+                  <span class="caret"></span>
+                </a>
+
+                <div id="payment_gateways" class="collapse">
+                  <ul class="nav nav-collapse">
+                    <li class="">
+                      <a href="online-gateways.html">
+                        <span class="sub-item">Online Gateways</span>
+                      </a>
+                    </li>
+
+                    <li class="">
+                      <a href="offline-gateways.html">
+                        <span class="sub-item">Offline Gateways</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a data-toggle="collapse" href="#admin">
+                  <i class="fa-solid fa-users"></i>
+                  <p>Admin Management</p>
+                  <span class="caret"></span>
+                </a>
+
+                <div id="admin" class="collapse">
+                  <ul class="nav nav-collapse">
+                    <li class="">
+                      <a href="role-permissions.html">
+                        <span class="sub-item">Role &amp; Permissions</span>
+                      </a>
+                    </li>
+
+                    <li class="">
+                      <a href="registered-admins.html">
+                        <span class="sub-item">Registered Admins</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a href="language-management.html">
+                  <i class="fa-solid fa-language"></i>
+                  <p>Language Management</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-panel">
+        <div class="content">
+          <div class="page-inner">
+            <div class="page-header">
+              <h4 class="page-title">All Advertisements</h4>
+              <ul class="breadcrumbs">
+                <li class="nav-home">
+                  <a
+                    href="https://codecanyon8.kreativdev.com/estaty/admin/dashboard"
+                  >
+                    <i class="fa-solid fa-home"></i>
+                  </a>
+                </li>
+                <li class="separator">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </li>
+                <li class="nav-item">
+                  <a href="#">Advertisements</a>
+                </li>
+                <li class="separator">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </li>
+                <li class="nav-item">
+                  <a href="#">All Advertisements</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="card">
+                  <div class="card-header">
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <div class="card-title d-inline-block">
+                          All Advertisements
+                        </div>
+                      </div>
+
+                      <div class="col-lg-8 mt-2 mt-lg-0">
+                        <a
+                          href="#"
+                          data-toggle="modal"
+                          data-target="#createModal"
+                          class="btn btn-primary btn-sm float-lg-right float-left"
+                          ><i class="fa-solid fa-plus"></i> Add</a
+                        >
+
+                        <button
+                          class="btn btn-danger float-right btn-sm mr-2 d-none bulk-delete"
+                          data-href="https://codecanyon8.kreativdev.com/estaty/admin/advertise/bulk-delete-advertisement"
+                        >
+                          <i class="flaticon-interface-5"></i> Delete
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="table-responsive">
+                          <div
+                            id="basic-datatables_wrapper"
+                            class="dataTables_wrapper dt-bootstrap4 no-footer"
+                          >
+                            <div class="row">
+                              <div class="col-sm-12">
+                                <table
+                                  class="table table-striped mt-3 dataTable no-footer"
+                                  id="basic-datatables"
+                                  role="grid"
+                                  aria-describedby="basic-datatables_info"
+                                >
+                                  <thead>
+                                    <tr role="row">
+                                      <th
+                                        scope="col"
+                                        class="sorting_disabled"
+                                        rowspan="1"
+                                        colspan="1"
+                                        style="width: 62.4306px"
+                                      >
+                                        <input
+                                          type="checkbox"
+                                          class="bulk-check"
+                                          data-val="all"
+                                        />
+                                      </th>
+                                      <th
+                                        scope="col"
+                                        class="sorting_disabled"
+                                        rowspan="1"
+                                        colspan="1"
+                                        style="width: 129.491px"
+                                      >
+                                        Ad Type
+                                      </th>
+                                      <th
+                                        scope="col"
+                                        class="sorting_disabled"
+                                        rowspan="1"
+                                        colspan="1"
+                                        style="width: 159.919px"
+                                      >
+                                        Resolution
+                                      </th>
+                                      <th
+                                        scope="col"
+                                        class="sorting_disabled"
+                                        rowspan="1"
+                                        colspan="1"
+                                        style="width: 119.549px"
+                                      >
+                                        Image
+                                      </th>
+                                      <th
+                                        scope="col"
+                                        class="sorting_disabled"
+                                        rowspan="1"
+                                        colspan="1"
+                                        style="width: 107.801px"
+                                      >
+                                        Views
+                                      </th>
+                                      <th
+                                        scope="col"
+                                        class="sorting_disabled"
+                                        rowspan="1"
+                                        colspan="1"
+                                        style="width: 160.162px"
+                                      >
+                                        Actions
+                                      </th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr class="odd">
+                                      <td>
+                                        <input
+                                          type="checkbox"
+                                          class="bulk-check"
+                                          data-val="13"
+                                        />
+                                      </td>
+                                      <td>Banner</td>
+                                      <td>728 x 90</td>
+                                      <td>
+                                        <img
+                                          src="https://codecanyon8.kreativdev.com/estaty/assets/img/advertisements/65bf707d02fb5.png"
+                                          alt="ad image"
+                                          width="45"
+                                        />
+                                      </td>
+                                      <td>18</td>
+                                      <td>
+                                        <div class="dropdown">
+                                          <button
+                                            class="btn btn-secondary dropdown-toggle btn-sm"
+                                            type="button"
+                                            id="dropdownMenuButton"
+                                            data-toggle="dropdown"
+                                            aria-haspopup="true"
+                                            aria-expanded="false"
+                                          >
+                                            Select
+                                          </button>
+
+                                          <div
+                                            class="dropdown-menu"
+                                            aria-labelledby="dropdownMenuButton"
+                                          >
+                                            <a
+                                              class="dropdown-item editBtn"
+                                              href="#"
+                                              data-toggle="modal"
+                                              data-target="#editModal"
+                                              data-id="13"
+                                              data-ad_type="banner"
+                                              data-resolution_type="3"
+                                              data-image="https://codecanyon8.kreativdev.com/estaty/assets/img/advertisements/65bf707d02fb5.png"
+                                              data-url="http://example.com/"
+                                              data-slot=""
+                                              data-edit="editAdvertisement"
+                                            >
+                                              <span class="btn-label">
+                                                <i class="fa-solid fa-edit"></i>
+                                                Edit
+                                              </span>
+                                            </a>
+
+                                            <form
+                                              class="deleteForm d-block p-0 dropdown-item"
+                                              action="https://codecanyon8.kreativdev.com/estaty/admin/advertise/delete-advertisement/13"
+                                              method="post"
+                                            >
+                                              <input
+                                                type="hidden"
+                                                name="_token"
+                                                value="EtrUwIn6Vqiife4Ru9GidqKmNQAKmWZdvQ9IruDx"
+                                              />
+                                              <button
+                                                type="submit"
+                                                class="deleteBtn"
+                                              >
+                                                <span class="btn-label">
+                                                  <i
+                                                    class="fa-solid fa-trash"
+                                                  ></i>
+                                                  Delete
+                                                </span>
+                                              </button>
+                                            </form>
+                                          </div>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    <tr class="even">
+                                      <td>
+                                        <input
+                                          type="checkbox"
+                                          class="bulk-check"
+                                          data-val="12"
+                                        />
+                                      </td>
+                                      <td>Banner</td>
+                                      <td>300 x 250</td>
+                                      <td>
+                                        <img
+                                          src="https://codecanyon8.kreativdev.com/estaty/assets/img/advertisements/65bf5a21d896f.png"
+                                          alt="ad image"
+                                          width="45"
+                                        />
+                                      </td>
+                                      <td>1</td>
+                                      <td>
+                                        <div class="dropdown">
+                                          <button
+                                            class="btn btn-secondary dropdown-toggle btn-sm"
+                                            type="button"
+                                            id="dropdownMenuButton"
+                                            data-toggle="dropdown"
+                                            aria-haspopup="true"
+                                            aria-expanded="false"
+                                          >
+                                            Select
+                                          </button>
+
+                                          <div
+                                            class="dropdown-menu"
+                                            aria-labelledby="dropdownMenuButton"
+                                          >
+                                            <a
+                                              class="dropdown-item editBtn"
+                                              href="#"
+                                              data-toggle="modal"
+                                              data-target="#editModal"
+                                              data-id="12"
+                                              data-ad_type="banner"
+                                              data-resolution_type="1"
+                                              data-image="https://codecanyon8.kreativdev.com/estaty/assets/img/advertisements/65bf5a21d896f.png"
+                                              data-url="http://example.com/"
+                                              data-slot=""
+                                              data-edit="editAdvertisement"
+                                            >
+                                              <span class="btn-label">
+                                                <i class="fa-solid fa-edit"></i>
+                                                Edit
+                                              </span>
+                                            </a>
+
+                                            <form
+                                              class="deleteForm d-block p-0 dropdown-item"
+                                              action="https://codecanyon8.kreativdev.com/estaty/admin/advertise/delete-advertisement/12"
+                                              method="post"
+                                            >
+                                              <input
+                                                type="hidden"
+                                                name="_token"
+                                                value="EtrUwIn6Vqiife4Ru9GidqKmNQAKmWZdvQ9IruDx"
+                                              />
+                                              <button
+                                                type="submit"
+                                                class="deleteBtn"
+                                              >
+                                                <span class="btn-label">
+                                                  <i
+                                                    class="fa-solid fa-trash"
+                                                  ></i>
+                                                  Delete
+                                                </span>
+                                              </button>
+                                            </form>
+                                          </div>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    <tr class="odd">
+                                      <td>
+                                        <input
+                                          type="checkbox"
+                                          class="bulk-check"
+                                          data-val="11"
+                                        />
+                                      </td>
+                                      <td>Banner</td>
+                                      <td>300 x 600</td>
+                                      <td>
+                                        <img
+                                          src="https://codecanyon8.kreativdev.com/estaty/assets/img/advertisements/65bf703742894.png"
+                                          alt="ad image"
+                                          width="45"
+                                        />
+                                      </td>
+                                      <td>11</td>
+                                      <td>
+                                        <div class="dropdown">
+                                          <button
+                                            class="btn btn-secondary dropdown-toggle btn-sm"
+                                            type="button"
+                                            id="dropdownMenuButton"
+                                            data-toggle="dropdown"
+                                            aria-haspopup="true"
+                                            aria-expanded="false"
+                                          >
+                                            Select
+                                          </button>
+
+                                          <div
+                                            class="dropdown-menu"
+                                            aria-labelledby="dropdownMenuButton"
+                                          >
+                                            <a
+                                              class="dropdown-item editBtn"
+                                              href="#"
+                                              data-toggle="modal"
+                                              data-target="#editModal"
+                                              data-id="11"
+                                              data-ad_type="banner"
+                                              data-resolution_type="2"
+                                              data-image="https://codecanyon8.kreativdev.com/estaty/assets/img/advertisements/65bf703742894.png"
+                                              data-url="http://example.com/"
+                                              data-slot=""
+                                              data-edit="editAdvertisement"
+                                            >
+                                              <span class="btn-label">
+                                                <i class="fa-solid fa-edit"></i>
+                                                Edit
+                                              </span>
+                                            </a>
+
+                                            <form
+                                              class="deleteForm d-block p-0 dropdown-item"
+                                              action="https://codecanyon8.kreativdev.com/estaty/admin/advertise/delete-advertisement/11"
+                                              method="post"
+                                            >
+                                              <input
+                                                type="hidden"
+                                                name="_token"
+                                                value="EtrUwIn6Vqiife4Ru9GidqKmNQAKmWZdvQ9IruDx"
+                                              />
+                                              <button
+                                                type="submit"
+                                                class="deleteBtn"
+                                              >
+                                                <span class="btn-label">
+                                                  <i
+                                                    class="fa-solid fa-trash"
+                                                  ></i>
+                                                  Delete
+                                                </span>
+                                              </button>
+                                            </form>
+                                          </div>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    <tr class="even">
+                                      <td>
+                                        <input
+                                          type="checkbox"
+                                          class="bulk-check"
+                                          data-val="10"
+                                        />
+                                      </td>
+                                      <td>Banner</td>
+                                      <td>300 x 250</td>
+                                      <td>
+                                        <img
+                                          src="https://codecanyon8.kreativdev.com/estaty/assets/img/advertisements/65bf7005b181d.png"
+                                          alt="ad image"
+                                          width="45"
+                                        />
+                                      </td>
+                                      <td>2</td>
+                                      <td>
+                                        <div class="dropdown">
+                                          <button
+                                            class="btn btn-secondary dropdown-toggle btn-sm"
+                                            type="button"
+                                            id="dropdownMenuButton"
+                                            data-toggle="dropdown"
+                                            aria-haspopup="true"
+                                            aria-expanded="false"
+                                          >
+                                            Select
+                                          </button>
+
+                                          <div
+                                            class="dropdown-menu"
+                                            aria-labelledby="dropdownMenuButton"
+                                          >
+                                            <a
+                                              class="dropdown-item editBtn"
+                                              href="#"
+                                              data-toggle="modal"
+                                              data-target="#editModal"
+                                              data-id="10"
+                                              data-ad_type="banner"
+                                              data-resolution_type="1"
+                                              data-image="https://codecanyon8.kreativdev.com/estaty/assets/img/advertisements/65bf7005b181d.png"
+                                              data-url="http://example.com/"
+                                              data-slot=""
+                                              data-edit="editAdvertisement"
+                                            >
+                                              <span class="btn-label">
+                                                <i class="fa-solid fa-edit"></i>
+                                                Edit
+                                              </span>
+                                            </a>
+
+                                            <form
+                                              class="deleteForm d-block p-0 dropdown-item"
+                                              action="https://codecanyon8.kreativdev.com/estaty/admin/advertise/delete-advertisement/10"
+                                              method="post"
+                                            >
+                                              <input
+                                                type="hidden"
+                                                name="_token"
+                                                value="EtrUwIn6Vqiife4Ru9GidqKmNQAKmWZdvQ9IruDx"
+                                              />
+                                              <button
+                                                type="submit"
+                                                class="deleteBtn"
+                                              >
+                                                <span class="btn-label">
+                                                  <i
+                                                    class="fa-solid fa-trash"
+                                                  ></i>
+                                                  Delete
+                                                </span>
+                                              </button>
+                                            </form>
+                                          </div>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    <tr class="odd">
+                                      <td>
+                                        <input
+                                          type="checkbox"
+                                          class="bulk-check"
+                                          data-val="9"
+                                        />
+                                      </td>
+                                      <td>Banner</td>
+                                      <td>300 x 250</td>
+                                      <td>
+                                        <img
+                                          src="https://codecanyon8.kreativdev.com/estaty/assets/img/advertisements/65bf6fee56fbd.png"
+                                          alt="ad image"
+                                          width="45"
+                                        />
+                                      </td>
+                                      <td>0</td>
+                                      <td>
+                                        <div class="dropdown">
+                                          <button
+                                            class="btn btn-secondary dropdown-toggle btn-sm"
+                                            type="button"
+                                            id="dropdownMenuButton"
+                                            data-toggle="dropdown"
+                                            aria-haspopup="true"
+                                            aria-expanded="false"
+                                          >
+                                            Select
+                                          </button>
+
+                                          <div
+                                            class="dropdown-menu"
+                                            aria-labelledby="dropdownMenuButton"
+                                          >
+                                            <a
+                                              class="dropdown-item editBtn"
+                                              href="#"
+                                              data-toggle="modal"
+                                              data-target="#editModal"
+                                              data-id="9"
+                                              data-ad_type="banner"
+                                              data-resolution_type="1"
+                                              data-image="https://codecanyon8.kreativdev.com/estaty/assets/img/advertisements/65bf6fee56fbd.png"
+                                              data-url="http://example.com/"
+                                              data-slot=""
+                                              data-edit="editAdvertisement"
+                                            >
+                                              <span class="btn-label">
+                                                <i class="fa-solid fa-edit"></i>
+                                                Edit
+                                              </span>
+                                            </a>
+
+                                            <form
+                                              class="deleteForm d-block p-0 dropdown-item"
+                                              action="https://codecanyon8.kreativdev.com/estaty/admin/advertise/delete-advertisement/9"
+                                              method="post"
+                                            >
+                                              <input
+                                                type="hidden"
+                                                name="_token"
+                                                value="EtrUwIn6Vqiife4Ru9GidqKmNQAKmWZdvQ9IruDx"
+                                              />
+                                              <button
+                                                type="submit"
+                                                class="deleteBtn"
+                                              >
+                                                <span class="btn-label">
+                                                  <i
+                                                    class="fa-solid fa-trash"
+                                                  ></i>
+                                                  Delete
+                                                </span>
+                                              </button>
+                                            </form>
+                                          </div>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    <tr class="even">
+                                      <td>
+                                        <input
+                                          type="checkbox"
+                                          class="bulk-check"
+                                          data-val="8"
+                                        />
+                                      </td>
+                                      <td>Banner</td>
+                                      <td>300 x 600</td>
+                                      <td>
+                                        <img
+                                          src="https://codecanyon8.kreativdev.com/estaty/assets/img/advertisements/65bf704fb05c6.png"
+                                          alt="ad image"
+                                          width="45"
+                                        />
+                                      </td>
+                                      <td>10</td>
+                                      <td>
+                                        <div class="dropdown">
+                                          <button
+                                            class="btn btn-secondary dropdown-toggle btn-sm"
+                                            type="button"
+                                            id="dropdownMenuButton"
+                                            data-toggle="dropdown"
+                                            aria-haspopup="true"
+                                            aria-expanded="false"
+                                          >
+                                            Select
+                                          </button>
+
+                                          <div
+                                            class="dropdown-menu"
+                                            aria-labelledby="dropdownMenuButton"
+                                          >
+                                            <a
+                                              class="dropdown-item editBtn"
+                                              href="#"
+                                              data-toggle="modal"
+                                              data-target="#editModal"
+                                              data-id="8"
+                                              data-ad_type="banner"
+                                              data-resolution_type="2"
+                                              data-image="https://codecanyon8.kreativdev.com/estaty/assets/img/advertisements/65bf704fb05c6.png"
+                                              data-url="http://example.com/"
+                                              data-slot=""
+                                              data-edit="editAdvertisement"
+                                            >
+                                              <span class="btn-label">
+                                                <i class="fa-solid fa-edit"></i>
+                                                Edit
+                                              </span>
+                                            </a>
+
+                                            <form
+                                              class="deleteForm d-block p-0 dropdown-item"
+                                              action="https://codecanyon8.kreativdev.com/estaty/admin/advertise/delete-advertisement/8"
+                                              method="post"
+                                            >
+                                              <input
+                                                type="hidden"
+                                                name="_token"
+                                                value="EtrUwIn6Vqiife4Ru9GidqKmNQAKmWZdvQ9IruDx"
+                                              />
+                                              <button
+                                                type="submit"
+                                                class="deleteBtn"
+                                              >
+                                                <span class="btn-label">
+                                                  <i
+                                                    class="fa-solid fa-trash"
+                                                  ></i>
+                                                  Delete
+                                                </span>
+                                              </button>
+                                            </form>
+                                          </div>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    <tr class="odd">
+                                      <td>
+                                        <input
+                                          type="checkbox"
+                                          class="bulk-check"
+                                          data-val="7"
+                                        />
+                                      </td>
+                                      <td>Banner</td>
+                                      <td>728 x 90</td>
+                                      <td>
+                                        <img
+                                          src="https://codecanyon8.kreativdev.com/estaty/assets/img/advertisements/65bf7088a2c9f.png"
+                                          alt="ad image"
+                                          width="45"
+                                        />
+                                      </td>
+                                      <td>24</td>
+                                      <td>
+                                        <div class="dropdown">
+                                          <button
+                                            class="btn btn-secondary dropdown-toggle btn-sm"
+                                            type="button"
+                                            id="dropdownMenuButton"
+                                            data-toggle="dropdown"
+                                            aria-haspopup="true"
+                                            aria-expanded="false"
+                                          >
+                                            Select
+                                          </button>
+
+                                          <div
+                                            class="dropdown-menu"
+                                            aria-labelledby="dropdownMenuButton"
+                                          >
+                                            <a
+                                              class="dropdown-item editBtn"
+                                              href="#"
+                                              data-toggle="modal"
+                                              data-target="#editModal"
+                                              data-id="7"
+                                              data-ad_type="banner"
+                                              data-resolution_type="3"
+                                              data-image="https://codecanyon8.kreativdev.com/estaty/assets/img/advertisements/65bf7088a2c9f.png"
+                                              data-url="http://example.com/"
+                                              data-slot=""
+                                              data-edit="editAdvertisement"
+                                            >
+                                              <span class="btn-label">
+                                                <i class="fa-solid fa-edit"></i>
+                                                Edit
+                                              </span>
+                                            </a>
+
+                                            <form
+                                              class="deleteForm d-block p-0 dropdown-item"
+                                              action="https://codecanyon8.kreativdev.com/estaty/admin/advertise/delete-advertisement/7"
+                                              method="post"
+                                            >
+                                              <input
+                                                type="hidden"
+                                                name="_token"
+                                                value="EtrUwIn6Vqiife4Ru9GidqKmNQAKmWZdvQ9IruDx"
+                                              />
+                                              <button
+                                                type="submit"
+                                                class="deleteBtn"
+                                              >
+                                                <span class="btn-label">
+                                                  <i
+                                                    class="fa-solid fa-trash"
+                                                  ></i>
+                                                  Delete
+                                                </span>
+                                              </button>
+                                            </form>
+                                          </div>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-footer"></div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="modal fade"
+              id="createModal"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalCenterTitle"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">
+                      Add Advertisement
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">×</span>
+                    </button>
+                  </div>
+
+                  <div class="modal-body">
+                    <form
+                      id="ajaxForm"
+                      class="modal-form"
+                      action="https://codecanyon8.kreativdev.com/estaty/admin/advertise/store-advertisement"
+                      method="post"
+                      enctype="multipart/form-data"
+                      onsubmit="return false"
+                    >
+                      <input
+                        type="hidden"
+                        name="_token"
+                        value="EtrUwIn6Vqiife4Ru9GidqKmNQAKmWZdvQ9IruDx"
+                      />
+                      <div class="form-group">
+                        <label for="">Advertisement Type*</label>
+                        <select name="ad_type" class="form-control ad-type">
+                          <option selected="" disabled="">Select a Type</option>
+                          <option value="banner">Banner</option>
+                          <option value="adsense">Google AdSense</option>
+                        </select>
+                        <p
+                          id="err_ad_type"
+                          class="mt-2 mb-0 text-danger em"
+                        ></p>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="">Advertisement Resolution*</label>
+                        <select name="resolution_type" class="form-control">
+                          <option selected="" disabled="">
+                            Select a Resolution
+                          </option>
+                          <option value="1">300 x 250</option>
+                          <option value="2">300 x 600</option>
+                          <option value="3">728 x 90</option>
+                        </select>
+                        <p
+                          id="err_resolution_type"
+                          class="mt-2 mb-0 text-danger em"
+                        ></p>
+                      </div>
+
+                      <div class="form-group d-none" id="image-input">
+                        <label for="">Image*</label>
+                        <br />
+                        <div class="thumb-preview">
+                          <img
+                            src="https://codecanyon8.kreativdev.com/estaty/assets/img/noimage.jpg"
+                            alt="..."
+                            class="uploaded-img"
+                          />
+                        </div>
+
+                        <div class="mt-3">
+                          <div
+                            role="button"
+                            class="btn btn-primary btn-sm upload-btn"
+                          >
+                            Choose Image
+                            <input type="file" class="img-input" name="image" />
+                          </div>
+                        </div>
+                        <p class="mt-2 mb-0 text-danger em" id="err_image"></p>
+                      </div>
+
+                      <div class="form-group d-none" id="url-input">
+                        <label for="">Redirect URL*</label>
+                        <input
+                          type="url"
+                          class="form-control"
+                          name="url"
+                          placeholder="Enter Redirect URL"
+                        />
+                        <p id="err_url" class="mt-2 mb-0 text-danger em"></p>
+                      </div>
+
+                      <div class="form-group d-none" id="slot-input">
+                        <label for="">Ad Slot*</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="slot"
+                          placeholder="Enter Ad Slot"
+                        />
+                        <p id="err_slot" class="mt-2 mb-0 text-danger em"></p>
+                        <p class="mt-2 mb-0">
+                          <a
+                            href="//prnt.sc/1uwa420"
+                            target="_blank"
+                            class="redirect-link"
+                            >Click Here</a
+                          >
+                          to see where you can find the ad slot.
+                        </p>
+                      </div>
+                    </form>
+                  </div>
+
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary btn-sm"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button
+                      id="submitBtn"
+                      type="button"
+                      class="btn btn-primary btn-sm"
+                    >
+                      Save
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="modal fade"
+              id="editModal"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalCenterTitle"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">
+                      Edit Advertisement
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">×</span>
+                    </button>
+                  </div>
+
+                  <div class="modal-body">
+                    <form
+                      id="ajaxEditForm"
+                      class="modal-form"
+                      action="https://codecanyon8.kreativdev.com/estaty/admin/advertise/update-advertisement"
+                      method="post"
+                      enctype="multipart/form-data"
+                      onsubmit="return false"
+                    >
+                      <input
+                        type="hidden"
+                        name="_token"
+                        value="EtrUwIn6Vqiife4Ru9GidqKmNQAKmWZdvQ9IruDx"
+                      />
+                      <input type="hidden" id="in_id" name="id" />
+
+                      <div class="form-group">
+                        <label for="">Advertisement Type*</label>
+                        <select
+                          name="ad_type"
+                          class="form-control edit-ad-type"
+                          id="in_ad_type"
+                        >
+                          <option disabled="">Select a Type</option>
+                          <option value="banner">Banner</option>
+                          <option value="adsense">Google AdSense</option>
+                        </select>
+                        <p
+                          id="editErr_ad_type"
+                          class="mt-2 mb-0 text-danger em"
+                        ></p>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="">Advertisement Resolution*</label>
+                        <select
+                          name="resolution_type"
+                          class="form-control"
+                          id="in_resolution_type"
+                        >
+                          <option disabled="">Select a Resolution</option>
+                          <option value="1">300 x 250</option>
+                          <option value="2">300 x 600</option>
+                          <option value="3">728 x 90</option>
+                        </select>
+                        <p
+                          id="editErr_resolution_type"
+                          class="mt-2 mb-0 text-danger em"
+                        ></p>
+                      </div>
+
+                      <div class="form-group d-none" id="edit-image-input">
+                        <label for="">Image*</label>
+                        <br />
+                        <div class="thumb-preview">
+                          <img
+                            src=""
+                            alt="advertisement image"
+                            class="in_image uploaded-img"
+                          />
+                        </div>
+
+                        <div class="mt-3">
+                          <div
+                            role="button"
+                            class="btn btn-primary btn-sm upload-btn"
+                          >
+                            Choose Image
+                            <input type="file" class="img-input" name="image" />
+                          </div>
+                        </div>
+                        <p
+                          class="mt-2 mb-0 text-danger em"
+                          id="editErr_image"
+                        ></p>
+                      </div>
+
+                      <div class="form-group d-none" id="edit-url-input">
+                        <label for="">Redirect URL*</label>
+                        <input
+                          type="url"
+                          class="form-control"
+                          name="url"
+                          placeholder="Enter Redirect URL"
+                          id="in_url"
+                        />
+                        <p
+                          id="editErr_url"
+                          class="mt-2 mb-0 text-danger em"
+                        ></p>
+                      </div>
+
+                      <div class="form-group d-none" id="edit-slot-input">
+                        <label for="">Ad Slot*</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="slot"
+                          placeholder="Enter Ad Slot"
+                          id="in_slot"
+                        />
+                        <p
+                          id="editErr_slot"
+                          class="mt-2 mb-0 text-danger em"
+                        ></p>
+                        <p class="mt-2 mb-0">
+                          <a
+                            href="//prnt.sc/1uwa420"
+                            target="_blank"
+                            class="redirect-link"
+                            >Click Here</a
+                          >
+                          to see where you can find the ad slot.
+                        </p>
+                      </div>
+                    </form>
+                  </div>
+
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary btn-sm"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button
+                      id="updateBtn"
+                      type="button"
+                      class="btn btn-primary btn-sm"
+                    >
+                      Update
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer class="footer py-4">
+          <div class="container-fluid">
+            <div class="d-block mx-auto">
+              <p class="mb-0"></p>
+              <p>Copyright ©2024. All Rights Reserved.</p>
+              <p></p>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script>
+      "use strict";
+      const demo_mode = "active";
+      const baseUrl = "https://codecanyon8.kreativdev.com/estaty";
+    </script>
+
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-migrate.js"></script>
+    <script type="text/javascript" src="assets/js/popper.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>
+    <script
+      type="text/javascript"
+      src="assets/js/jquery.ui.touch-punch.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="assets/js/jquery.timepicker.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="assets/js/jquery.scrollbar.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="assets/js/bootstrap-notify.min.js"
+    ></script>
+
+    <script type="text/javascript" src="assets/js/sweet-alert.min.js"></script>
+
+    <script
+      type="text/javascript"
+      src="assets/js/bootstrap-tagsinput.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="assets/js/bootstrap-datepicker.min.js"
+    ></script>
+
+    <script src="assets/js/tinymce/js/tinymce/tinymce.min.js"></script>
+
+    <script type="text/javascript" src="assets/js/jscolor.min.js"></script>
+
+    <script
+      type="text/javascript"
+      src="assets/js/fontawesome-iconpicker.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="assets/js/datatables-1.10.23.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="assets/js/datatables.bootstrap4.min.js"
+    ></script>
+
+    <script type="text/javascript" src="assets/js/dropzone.min.js"></script>
+
+    <script type="text/javascript" src="assets/js/atlantis.js"></script>
+
+    <script type="text/javascript" src="assets/js/webfont.min.js"></script>
+
+    <script>
+      "use strict";
+      const account_status = 1;
+      const secret_login = 1;
+    </script>
+
+    <script type="text/javascript" src="assets/js/select2.min.js"></script>
+
+    <script type="text/javascript" src="assets/js/admin-main.js"></script>
+
+    <script type="text/javascript" src="assets/js/chart.min.js"></script>
+
+    <script>
+      "use strict";
+      const monthArr = [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec",
+      ];
+      const packagePurchaseIncomesArr = [
+        0,
+        0,
+        0,
+        0,
+        0,
+        "2399.94",
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+      ];
+      const totalUsersArr = [0, 0, 0, 0, 0, "1", "1", 0, "3", 0, 0, 0];
+    </script>
+
+    <script type="text/javascript" src="assets/js/chart-init.js"></script>
+  </body>
+</html>
